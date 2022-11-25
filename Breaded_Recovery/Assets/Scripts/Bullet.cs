@@ -12,7 +12,7 @@ public class Bullet : MonoBehaviour
         GetComponent<Rigidbody2D>().velocity = transform.right * speed;
     }
 
-    // Update is called once per frame
+    
     private void OnTriggerEnter2D(Collider2D other)
     {
         IDamageable damageable = other.GetComponent<IDamageable>();

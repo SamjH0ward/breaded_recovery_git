@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class playerBullet : MonoBehaviour
+public class enemyBullet : MonoBehaviour
 {
     private Rigidbody2D rb2d;
     private Vector2 bulletDirection = new Vector2(-1, 0);
@@ -18,6 +18,6 @@ public class playerBullet : MonoBehaviour
     void FixedUpdate()
     {
         rb2d.velocity = bulletDirection * bulletSpeed;
-        if(transform.position.x >= -15) Destroy(gameObject);
+        if(transform.position.x <= -15) Destroy(gameObject);
     }
 }

@@ -12,6 +12,8 @@ GameObject:
   - component: {fileID: 1992375129727881510}
   - component: {fileID: 1992375129727881509}
   - component: {fileID: 1992375129727881508}
+  - component: {fileID: 8169467303107763437}
+  - component: {fileID: 5192108182909958111}
   m_Layer: 0
   m_Name: enemyThree
   m_TagString: Untagged
@@ -154,3 +156,30 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 1
   m_Constraints: 4
+--- !u!114 &8169467303107763437
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1992375129727881515}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e1c6988e55f744444bc58fe84f8bdcf1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  maxHitPoints: 20
+--- !u!114 &5192108182909958111
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1992375129727881515}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7ae3bfd482573f4419b2bb4ba692f9ce, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 5
+  maxHealth: 20

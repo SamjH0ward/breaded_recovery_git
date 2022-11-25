@@ -2,7 +2,9 @@ using UnityEngine;
 
 public class Bouncer : Enemy
 {
-    [SerializeField] private float speed = 5.0f;
+    [SerializeField] private float speed = -5.0f;
+    //[SerializeField] public float maxHealth = 10;
+
 
     private Rigidbody2D rb2d;
 
@@ -14,7 +16,9 @@ public class Bouncer : Enemy
 
     private void Start()
     {
-        Vector2 initialForce = Random.insideUnitCircle.normalized * speed;
-        rb2d.AddForce(initialForce, ForceMode2D.Impulse);
+        while(transform.position.x > 5.4f)
+        {
+            rb2d.velocity = new Vector2(speed, 0);
+        }
     }
 }

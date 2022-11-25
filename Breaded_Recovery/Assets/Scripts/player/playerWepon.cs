@@ -21,6 +21,7 @@ public class playerWepon : MonoBehaviour
     void OnShoot(InputValue input)
     {
         triggerHeld = input.Get<float>() > 0.5f;
+        Debug.Log(triggerHeld);
     }
 
     // Update is called once per frame
