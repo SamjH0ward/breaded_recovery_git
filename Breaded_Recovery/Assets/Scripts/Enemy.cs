@@ -1,5 +1,6 @@
 using UnityEngine;
 
+[RequireComponent(typeof(HealthSystem)]
 public abstract class Enemy : MonoBehaviour
 {
     protected HealthSystem health;
