@@ -9,11 +9,16 @@ public class HealthSystem : MonoBehaviour, IDamageable
 
     public float HitPoints { get; private set; }
     public event Action OnHealthDepleted;
+    public playerStats playerInfo;
 
     private void Awake()
     {
-        HitPoints = maxHitPoints;
-      
+        if(TryGetComponent(out playerStats foundPlayerInfo))
+        {
+            HitPoints = playerInfo.maxHealth;
+        }else { HitPoints = maxHitPoints; }
+        Debug.Log(gameObject + " " + HitPoints.ToString());
+
     }
 
     public void TakeDamage(int damage)

@@ -16,6 +16,8 @@ GameObject:
   - component: {fileID: 5407059578547535791}
   - component: {fileID: 5407059578547535786}
   - component: {fileID: 5407059578547535785}
+  - component: {fileID: 4316042794310757691}
+  - component: {fileID: 1857786708123663929}
   m_Layer: 0
   m_Name: player
   m_TagString: Player
@@ -239,3 +241,34 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   projectilePrefab: {fileID: 7998797178528914889, guid: a2884acbb3f467f499e3675df13bc5fc, type: 3}
   rateOfFire: 3
+--- !u!114 &4316042794310757691
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5407059578547535793}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e1c6988e55f744444bc58fe84f8bdcf1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  maxHitPoints: 0
+  playerInfo: {fileID: 0}
+--- !u!114 &1857786708123663929
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5407059578547535793}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 57e201c5e01585449a966d8b6582a53b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  maxHealth: 100
+  baseDamage: 0
+  playerSpeed: 0
+  armor: 0
+  dodgeChance: 0
