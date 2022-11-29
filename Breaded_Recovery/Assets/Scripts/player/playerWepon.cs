@@ -10,6 +10,7 @@ public class playerWepon : MonoBehaviour
 
     [SerializeField]
     private float rateOfFire = 3.0f;
+    public static int weponDamage = 10;
 
     private float nextShotTime = 0;
     private bool triggerHeld = false;
@@ -29,7 +30,7 @@ public class playerWepon : MonoBehaviour
     {
         if (Time.time > nextShotTime && triggerHeld)
         {
-            var bullet = Instantiate(projectilePrefab,new Vector3(transform.position.x, transform.position.y + 0.2f), transform.rotation);
+            var bullet = Instantiate(projectilePrefab,new Vector3((transform.position.x + 0.3f), (transform.position.y + 0.2f)), transform.rotation);
         
             nextShotTime = Time.time + (1 / rateOfFire);
         }   

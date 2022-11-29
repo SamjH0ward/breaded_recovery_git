@@ -169,6 +169,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   maxHitPoints: 20
+  setArmor: 5
+  playerInfo: {fileID: 0}
+  playerWepon: {fileID: 0}
 --- !u!114 &5192108182909958111
 MonoBehaviour:
   m_ObjectHideFlags: 0
