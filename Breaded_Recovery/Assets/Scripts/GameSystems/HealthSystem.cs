@@ -5,20 +5,41 @@ public class HealthSystem : MonoBehaviour, IDamageable
 {
     [SerializeField]
     private float maxHitPoints;
-    
+    [SerializeField]
+    [Tooltip("Set the armor for the enemy")]
+    private int setArmor = 1;
 
     public float HitPoints { get; private set; }
+    public float armor { get; private set; }
     public event Action OnHealthDepleted;
+    public playerStats playerInfo;
+    private bool isPlayer;
+
 
     private void Awake()
     {
-        HitPoints = maxHitPoints;
-      
+        if(TryGetComponent(out playerStats foundPlayerInfo))
+        {
+            HitPoints = playerInfo.maxHealth;
+            armor = playerInfo.armor;
+            isPlayer = true;
+        }else { 
+            HitPoints = maxHitPoints;
+            armor = setArmor;
+        }
+        Debug.Log(gameObject + " " + HitPoints.ToString());
+
     }
 
     public void TakeDamage(int damage)
     {
-        HitPoints -= damage;
+        if (!isPlayer) { HitPoints -= ((playerWepon.weponDamage - armor) + damage);
+        }else{
+            HitPoints -= damage;
+        }
+       
+
+        Debug.Log(damage);
         Debug.Log(gameObject + " " + HitPoints.ToString());
 
         if (HitPoints <= 0)
