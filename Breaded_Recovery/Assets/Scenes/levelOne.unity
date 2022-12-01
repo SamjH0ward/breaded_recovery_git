@@ -617,6 +617,56 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 699818322}
   m_CullTransparentMesh: 1
+--- !u!1 &909911497
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 909911499}
+  - component: {fileID: 909911498}
+  m_Layer: 0
+  m_Name: gameManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 3936346786652291628, guid: 0000000000000000d000000000000000, type: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &909911498
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 909911497}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a249d5228e510c84a9ff2242dbd04245, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  enmies:
+  - {fileID: 1793807763327295082, guid: ad60db99e898baa42ab779e0f20a25b0, type: 3}
+  - {fileID: 7177064815877103435, guid: ac9e3dcfbddd28049b211123bcb959e7, type: 3}
+  - {fileID: 1992375129727881515, guid: 172b2f3f137bb4e46b84d484e0e99556, type: 3}
+  - {fileID: 6892504253155666352, guid: 53f628c7b891ece469f29a73acedd7e8, type: 3}
+  - {fileID: 4548276063280757126, guid: 11b77652c839b834f8f2fa54711ae9ab, type: 3}
+--- !u!4 &909911499
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 909911497}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -6.127775, y: -0.54158294, z: -0.12199867}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 8
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1266171195
 GameObject:
   m_ObjectHideFlags: 0
@@ -915,7 +965,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5407059578547535790, guid: 8c0b5d5d748500442aa1417b846cfcb7, type: 3}
       propertyPath: m_IsTrigger
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5407059578547535792, guid: 8c0b5d5d748500442aa1417b846cfcb7, type: 3}
       propertyPath: m_Actions

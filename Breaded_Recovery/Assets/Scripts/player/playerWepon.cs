@@ -30,7 +30,7 @@ public class playerWepon : MonoBehaviour
     {
         if (Time.time > nextShotTime && triggerHeld)
         {
-            var bullet = Instantiate(projectilePrefab,new Vector3((transform.position.x + 0.3f), (transform.position.y + 0.2f)), transform.rotation);
+            Instantiate(projectilePrefab,new Vector3((transform.position.x + 0.3f), (transform.position.y + 0.2f)), transform.rotation);
         
             nextShotTime = Time.time + (1 / rateOfFire);
         }   
