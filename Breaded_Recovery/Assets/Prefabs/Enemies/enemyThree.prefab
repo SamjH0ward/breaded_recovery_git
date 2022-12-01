@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 1992375129727881508}
   - component: {fileID: 8169467303107763437}
   - component: {fileID: 5192108182909958111}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: enemyThree
   m_TagString: enemy
   m_Icon: {fileID: 0}
@@ -171,7 +171,6 @@ MonoBehaviour:
   maxHitPoints: 20
   setArmor: 5
   playerInfo: {fileID: 0}
-  playerWepon: {fileID: 0}
 --- !u!114 &5192108182909958111
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -184,4 +183,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7ae3bfd482573f4419b2bb4ba692f9ce, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 5
+  speed: -5
+  bullet: {fileID: 4211186664103317416, guid: b98e5a9c2adb64d49aa19d0f6cab00de, type: 3}

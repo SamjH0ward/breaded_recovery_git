@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using TMPro;
 using UnityEngine.SceneManagement;
 
 public class gameManager : MonoBehaviour
@@ -9,6 +10,10 @@ public class gameManager : MonoBehaviour
 
     private static gameManager _instance;
     public static gameManager Instance { get { return _instance; } }
+
+    private HealthSystem playrHealth;
+
+    private Transform spawnRotation;
 
     [SerializeField] 
     private GameObject[] enmies;
@@ -30,13 +35,15 @@ public class gameManager : MonoBehaviour
     void Start()
     {
 
+        int enemyID = Random.RandomRange(0, 4);
+        var sawnPoint = Instantiate(enmies[enemyID], (new Vector2(0,0)),  enmies[enemyID].transform.rotation);
+   
 
-        Instantiate(enmies[Random.RandomRange(0, 4)], new Vector2(0,0),new Quaternion(0,0,-0.5f,0));
     }
 
     // Update is called once per frame
     void Update()
     {
-        
+       
     }
 }

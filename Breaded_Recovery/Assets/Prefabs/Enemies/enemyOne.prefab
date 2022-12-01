@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 1793807763327295083}
   - component: {fileID: -5382304107376820176}
   - component: {fileID: -8051992474536413886}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: enemyOne
   m_TagString: enemy
   m_Icon: {fileID: 0}
@@ -174,6 +174,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   maxHitPoints: 10
+  setArmor: 1
+  playerInfo: {fileID: 0}
 --- !u!114 &-8051992474536413886
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -186,4 +188,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7ae3bfd482573f4419b2bb4ba692f9ce, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 5
+  speed: -5
+  bullet: {fileID: 4211186664103317416, guid: b98e5a9c2adb64d49aa19d0f6cab00de, type: 3}

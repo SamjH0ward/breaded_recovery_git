@@ -9,7 +9,7 @@ public class playerWepon : MonoBehaviour
     private GameObject projectilePrefab;
 
     [SerializeField]
-    private float rateOfFire = 3.0f;
+    private float rateOfFire = 3f;
     public static int weponDamage = 10;
 
     private float nextShotTime = 0;
