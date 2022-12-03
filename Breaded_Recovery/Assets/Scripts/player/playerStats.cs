@@ -1,3 +1,5 @@
+// aurtour sam howard
+
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -17,12 +19,40 @@ public class playerStats : MonoBehaviour
     void Start()
     {
         switch(shipType){
-            case "crusser":
+            case "cruiser":
                 maxHealth = 100;
                 baseDamage = 5;
-                playerSpeed = 6;
-                armor = 6;
+                playerSpeed = 5;
+                armor = 8;
                 dodgeChance = 3;
+                break;
+            case "fighter":
+                maxHealth = 90;
+                baseDamage = 8;
+                playerSpeed = 6;
+                armor = 8;
+                dodgeChance = 3;
+                break;
+            case "racer":
+                maxHealth = 80;
+                baseDamage = 4;
+                playerSpeed = 7;
+                armor = 5;
+                dodgeChance = 8;
+                break;
+            case "behemoth":
+                maxHealth = 120;
+                baseDamage = 4;
+                playerSpeed = 3;
+                armor = 12;
+                dodgeChance = 0;
+                break;
+            case "destroyer":
+                maxHealth = 110;
+                baseDamage = 8;
+                playerSpeed = 3;
+                armor = 10;
+                dodgeChance = 0;
                 break;
             default:
                 maxHealth = 100;

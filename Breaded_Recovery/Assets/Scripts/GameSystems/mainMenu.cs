@@ -1,3 +1,5 @@
+// aurtour sam howard
+
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -17,9 +19,9 @@ public class mainMenu : MonoBehaviour
     }
 
     #region selectCharacter
-    public void selectCrusser()
+    public void selectCruiser()
     {
-        playerStats.shipType = "crusser";
+        playerStats.shipType = "cruiser";
         loadLevel();
     }
 
@@ -31,13 +33,13 @@ public class mainMenu : MonoBehaviour
 
     public void selectRacer()
     {
-        playerStats.shipType = "fighter";
+        playerStats.shipType = "racer";
         loadLevel();
     }
 
     public void selectBehemoth()
     {
-        playerStats.shipType = "Behemoth";
+        playerStats.shipType = "behemoth";
         loadLevel();
     }
 

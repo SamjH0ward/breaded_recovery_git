@@ -1,11 +1,3 @@
-<<<<<<< Updated upstream
 Base path: 'D:/UnityEditors/2021.3.3f1/Editor/Data', plugins path 'D:/UnityEditors/2021.3.3f1/Editor/Data/PlaybackEngines'
-=======
-<<<<<<< HEAD
-Base path: 'C:/Program Files/Unity 2021.3.3f1/Editor/Data', plugins path 'C:/Program Files/Unity 2021.3.3f1/Editor/Data/PlaybackEngines'
-=======
-Base path: 'D:/UnityEditors/2021.3.3f1/Editor/Data', plugins path 'D:/UnityEditors/2021.3.3f1/Editor/Data/PlaybackEngines'
->>>>>>> 4498ac73bfd44660e472e3f30427c79557526753
->>>>>>> Stashed changes
 Cmd: initializeCompiler
 
