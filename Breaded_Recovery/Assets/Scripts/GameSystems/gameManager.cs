@@ -35,8 +35,9 @@ public class gameManager : MonoBehaviour
     void Start()
     {
 
-        int enemyID = Random.RandomRange(0, 4);
-        var sawnPoint = Instantiate(enmies[enemyID], (new Vector2(0,0)),  enmies[enemyID].transform.rotation);
+        //int enemyID = Random.RandomRange(0, 4);
+        // var sawnPoint = Instantiate(enmies[enemyID], (new Vector2(0,0)),  enmies[enemyID].transform.rotation);
+        Debug.Log(playerStats.shipType);
    
 
     }

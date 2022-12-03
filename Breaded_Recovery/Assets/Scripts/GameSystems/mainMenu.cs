@@ -9,11 +9,49 @@ public class mainMenu : MonoBehaviour
     [SerializeField] GameObject _CharacterSelection;
 
     // Start is called before the first frame update
-    public void OnClickStart()
+    public void startButton()
     {
         _CharacterSelection.SetActive(true);
         gameObject.SetActive(false);
+        
     }
+
+    #region selectCharacter
+    public void selectCrusser()
+    {
+        playerStats.shipType = "crusser";
+        loadLevel();
+    }
+
+    public void selectFighter()
+    {
+        playerStats.shipType = "fighter";
+        loadLevel();
+    }
+
+    public void selectRacer()
+    {
+        playerStats.shipType = "fighter";
+        loadLevel();
+    }
+
+    public void selectBehemoth()
+    {
+        playerStats.shipType = "Behemoth";
+        loadLevel();
+    }
+
+    public void selectDestroyer()
+    {
+        playerStats.shipType = "destroyer";
+        loadLevel();
+    }
+    #endregion selectCharacter
+    private void loadLevel()
+    {
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1, LoadSceneMode.Single);
+    }
+
 
     // Update is called once per frame
     void Update()

@@ -16,11 +16,23 @@ public class playerStats : MonoBehaviour
 
     void Start()
     {
-        maxHealth = 100;
-        baseDamage = 5;
-        playerSpeed = 6;
-        armor = 6;
-        dodgeChance = 3;
+        switch(shipType){
+            case "crusser":
+                maxHealth = 100;
+                baseDamage = 5;
+                playerSpeed = 6;
+                armor = 6;
+                dodgeChance = 3;
+                break;
+            default:
+                maxHealth = 100;
+                baseDamage = 5;
+                playerSpeed = 6;
+                armor = 6;
+                dodgeChance = 3;
+                break;
+        }
+       
     }
 
     // Update is called once per frame
