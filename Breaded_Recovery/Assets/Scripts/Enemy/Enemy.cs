@@ -19,5 +19,7 @@ public abstract class Enemy : MonoBehaviour
     {
         Destroy(gameObject);
     }
+
+    
 }
 

@@ -12,9 +12,11 @@ GameObject:
   - component: {fileID: 4548276063280757123}
   - component: {fileID: 4548276063280757124}
   - component: {fileID: 4548276063280757125}
-  m_Layer: 0
+  - component: {fileID: -3680758596975300240}
+  - component: {fileID: 78530194290216780}
+  m_Layer: 8
   m_Name: enemyFive
-  m_TagString: Untagged
+  m_TagString: enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -151,3 +153,33 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 1
   m_Constraints: 4
+--- !u!114 &-3680758596975300240
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4548276063280757126}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e1c6988e55f744444bc58fe84f8bdcf1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  maxHitPoints: 10
+  setArmor: 1
+  playerInfo: {fileID: 0}
+--- !u!114 &78530194290216780
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4548276063280757126}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7ae3bfd482573f4419b2bb4ba692f9ce, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: -5
+  bullet: {fileID: 4211186664103317416, guid: b98e5a9c2adb64d49aa19d0f6cab00de, type: 3}
+  rateOfFire: 1

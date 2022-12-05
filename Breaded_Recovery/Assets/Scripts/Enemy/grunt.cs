@@ -6,7 +6,7 @@ public class grunt : Enemy
 {
     [SerializeField] private float speed = -5.0f;
     [SerializeField] private GameObject bullet;
-    private float rateOfFire = 2f;
+    [SerializeField] [Range(1,1.5f)] private float rateOfFire = 1.5f;
     private float nextShotTime = 0;
     //[SerializeField] public float maxHealth = 10;
 
@@ -27,6 +27,8 @@ public class grunt : Enemy
 
     private void Update()
     {
+
+        if (transform.position.x <= -15) Destroy(gameObject);
         if (Time.time > nextShotTime)
         {
             Instantiate(bullet, transform.position, bullet.transform.rotation);

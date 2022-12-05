@@ -22,6 +22,7 @@ public class enemyBullet : MonoBehaviour
     {
         rb2d.velocity = bulletDirection * bulletSpeed;
         if(transform.position.x <= -15) Destroy(gameObject);
+       
     }
 
     private void OnTriggerEnter2D(Collider2D other)
