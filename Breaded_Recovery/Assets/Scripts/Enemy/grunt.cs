@@ -1,4 +1,4 @@
-// aurtour sam howard
+// author sam howard
 
 using UnityEngine;
 

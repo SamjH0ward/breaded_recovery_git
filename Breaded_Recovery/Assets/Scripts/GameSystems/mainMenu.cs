@@ -1,4 +1,4 @@
-// aurtour sam howard
+// author sam howard
 
 using System.Collections;
 using System.Collections.Generic;
