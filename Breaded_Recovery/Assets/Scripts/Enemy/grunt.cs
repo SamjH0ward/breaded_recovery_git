@@ -2,6 +2,7 @@
 
 using UnityEngine;
 
+[RequireComponent(typeof(Enemy))]
 public class grunt : Enemy
 {
     [SerializeField] private float speed = -5.0f;
