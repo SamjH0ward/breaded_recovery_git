@@ -16,13 +16,14 @@ public class HealthSystem : MonoBehaviour, IDamageable
     public event Action OnHealthDepleted;
     public playerStats playerInfo;
     private bool isPlayer;
-
+    public event Action OnHealthChanged;
 
     private void Awake()
     {
         if(TryGetComponent(out playerStats foundPlayerInfo))
         {
             HitPoints = playerInfo.maxHealth;
+            Debug.Log(armor);
             armor = playerInfo.armor;
             isPlayer = true;
         }else { 
@@ -35,14 +36,15 @@ public class HealthSystem : MonoBehaviour, IDamageable
 
     public void TakeDamage(int damage)
     {
-        if (!isPlayer) { HitPoints -= ((playerWepon.weponDamage - armor) + damage);
+        if (!isPlayer) {
+            HitPoints -= ((playerWepon.weponDamage - armor) + damage);
+            
         }else{
-            HitPoints -= damage;
+            float damageTaken = damage - armor;
+            if(damageTaken > 0) HitPoints -= damage - armor;
+            OnHealthChanged?.Invoke();
         }
-       
-
-        Debug.Log(damage);
-        Debug.Log(gameObject + " " + HitPoints.ToString());
+    
 
         if (HitPoints <= 0)
         {

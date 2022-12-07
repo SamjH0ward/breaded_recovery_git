@@ -13,7 +13,10 @@ public class gameManager : MonoBehaviour
     private static gameManager _instance;
     public static gameManager Instance { get { return _instance; } }
 
-    private HealthSystem playrHealth;
+    [SerializeField] protected HealthSystem healthUpdate;
+    [SerializeField] private HealthSystem playerHealth;
+
+    [SerializeField] private TextMeshProUGUI health_Ui;
 
     private Transform spawnRotation;
 
@@ -29,7 +32,7 @@ public class gameManager : MonoBehaviour
 
     private void Awake()
     {
-       
+        health_Ui.text = "Health: " + playerHealth.HitPoints;
 
         if (_instance != null && _instance != this)
         {
@@ -59,7 +62,19 @@ public class gameManager : MonoBehaviour
 
             var sawnPoint = Instantiate(enmies[enemyID], (new Vector2(9.7f, ySpawnLocation)), enmies[enemyID].transform.rotation);
             nextSpawnTime = Time.time + (1 / enemySpawnRate);
-        }   
+        }
+
+        
+    
         
     }
+    private void OnEnable() => healthUpdate.OnHealthChanged += upDateHealthUi;
+    private void OnDisable() => healthUpdate.OnHealthChanged -= upDateHealthUi;
+
+    private void upDateHealthUi()
+    {
+        health_Ui.text = "Health: " + playerHealth.HitPoints;
+    }
+    
+    
 }

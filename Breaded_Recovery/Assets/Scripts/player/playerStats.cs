@@ -16,7 +16,7 @@ public class playerStats : MonoBehaviour
 
     public static string shipType;
 
-    void Start()
+    void Awake()
     {
         switch(shipType){
             case "cruiser":
