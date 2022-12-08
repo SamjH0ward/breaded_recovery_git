@@ -18,10 +18,10 @@ TagManager:
   - UI
   - player
   - enemyBullet
+  - sniper
   - enemy
   - playerBullet
   - WallofFire
-  - 
   - 
   - 
   - 
@@ -48,4 +48,7 @@ TagManager:
     locked: 0
   - name: Default
     uniqueID: 0
+    locked: 0
+  - name: player
+    uniqueID: 4232614955
     locked: 0

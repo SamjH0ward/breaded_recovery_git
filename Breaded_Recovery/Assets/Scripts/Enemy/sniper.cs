@@ -8,7 +8,7 @@ public class sniper : Enemy
     [SerializeField] private GameObject bullet;
     [SerializeField][Range(1, 1.5f)] private float rateOfFire = 1.5f;
     private float nextShotTime = 0;
-
+    [SerializeField] private GameObject player;
     
 
     private Rigidbody2D rb2d;
@@ -16,25 +16,41 @@ public class sniper : Enemy
     protected override void Awake()
     {
         base.Awake();
+        player = GameObject.FindGameObjectWithTag("player");
         rb2d = GetComponent<Rigidbody2D>();
     }
 
 
     private void FixedUpdate()
     {
+        float distance = transform.position.y - player.transform.position.y;
         if (transform.position.x > 6.2) {
             rb2d.velocity = new Vector2(speed, 0);
-            Debug.Log("Straight");
         }
         else
         {
-            rb2d.velocity = new Vector2(0, 0);
-            Debug.Log("Gay");
+            if (distance > 0)
+            {
+                rb2d.velocity = new Vector2(0, speed);
+            }
+            else if(distance <0)
+            {
+                rb2d.velocity = new Vector2(0, -speed);
+            }
+            else
+            {
+                rb2d.velocity = new Vector2(0, 0);
+            }
+          
         }
+
+        
+      
+
 
     }
 
-  
+
     void Update()
     {
         if (Time.time > nextShotTime)
