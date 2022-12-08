@@ -23,14 +23,13 @@ public class HealthSystem : MonoBehaviour, IDamageable
         if(TryGetComponent(out playerStats foundPlayerInfo))
         {
             HitPoints = playerInfo.maxHealth;
-            Debug.Log(armor);
             armor = playerInfo.armor;
             isPlayer = true;
         }else { 
             HitPoints = maxHitPoints;
             armor = setArmor;
         }
-        Debug.Log(gameObject + " " + HitPoints.ToString());
+
 
     }
 

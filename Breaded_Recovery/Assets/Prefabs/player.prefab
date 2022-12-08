@@ -18,7 +18,7 @@ GameObject:
   - component: {fileID: 5407059578547535785}
   - component: {fileID: 4316042794310757691}
   - component: {fileID: 1857786708123663929}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: player
   m_TagString: Player
   m_Icon: {fileID: 0}
@@ -254,6 +254,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   maxHitPoints: 0
+  setArmor: 0
   playerInfo: {fileID: 0}
 --- !u!114 &1857786708123663929
 MonoBehaviour:

@@ -32,10 +32,12 @@ public class gameManager : MonoBehaviour
     private float ySpawnLocation;
 
 
+    
     private void Awake()
     {
+        //updates health on wake
         health_Ui.text = "Health: " + playerHealth.HitPoints;
-
+        //assures only one instance of gamemanger can exists
         if (_instance != null && _instance != this)
         {
             Destroy(this.gameObject);
@@ -48,10 +50,6 @@ public class gameManager : MonoBehaviour
     void Start()
     {
 
-        
-        Debug.Log(playerStats.shipType);
-   
-
     }
 
     // Update is called once per frame
@@ -60,7 +58,7 @@ public class gameManager : MonoBehaviour
         if(Time.time > nextSpawnTime)
         {
             //generate a random numebr between 1 and 100 + does not over spawn sniper enemy
-            if(GameObject.FindGameObjectsWithTag("sniper").Length > 5)
+            if(GameObject.FindGameObjectsWithTag("sniper").Length >= 5)
             {
                Debug.Log("Max snuper reached");
                enemyID = Random.RandomRange(1, 80);
@@ -85,10 +83,12 @@ public class gameManager : MonoBehaviour
                 enemyID = 4;    
             }
 
-
+            //generates random spawn location from the enemy in a given rnage
             ySpawnLocation = Random.RandomRange(-4.2f, 4.2f);
 
+            //spawns the enemy
             var sawnPoint = Instantiate(enmies[enemyID], (new Vector2(9.7f, ySpawnLocation)), enmies[enemyID].transform.rotation);
+            //sets spawn delay for next enemy
             nextSpawnTime = Time.time + (1 / enemySpawnRate);
         }
 
