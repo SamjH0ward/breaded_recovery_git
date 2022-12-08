@@ -8,6 +8,7 @@ public class Wall_Fire : MonoBehaviour
 {
     private Rigidbody2D rigid;
     private BoxCollider2D Collision;
+    private Transform location;
     [SerializeField] private float speed = 4;
     [SerializeField] private int dmg = 10;
     // Start is called before the first frame update
@@ -21,6 +22,11 @@ public class Wall_Fire : MonoBehaviour
     void Update()
     {
         rigid.velocity = -transform.right * speed;
+
+        if( transform.position.x < -10)
+        {
+            Destroy(gameObject);
+        }
     }
     private void OnTriggerEnter2D(Collider2D other)
     {
