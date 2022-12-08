@@ -25,8 +25,8 @@ public class gameManager : MonoBehaviour
 
     [SerializeField] 
     private GameObject[] enmies;
-    
-    
+
+    private int fireSpawn;
 
     private int enemyID;
     private float ySpawnLocation;
@@ -55,6 +55,17 @@ public class gameManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        fireSpawn = Random.Range(1, 1500);
+        if (fireSpawn == 137)
+        { 
+            if (GameObject.FindGameObjectsWithTag("firey").Length == 0)
+
+            {
+                Instantiate(enmies[5]);
+
+            }
+
+        }
         if(Time.time > nextSpawnTime)
         {
             //generate a random numebr between 1 and 100 + does not over spawn sniper enemy
