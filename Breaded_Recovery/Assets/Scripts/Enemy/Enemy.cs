@@ -17,7 +17,9 @@ public abstract class Enemy : MonoBehaviour
 
     private void Die()
     {
+        
         Destroy(gameObject);
+        
     }
 
     

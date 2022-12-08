@@ -25,6 +25,8 @@ public class gameManager : MonoBehaviour
 
     [SerializeField] 
     private GameObject[] enmies;
+    
+    
 
     private int enemyID;
     private float ySpawnLocation;
@@ -57,7 +59,33 @@ public class gameManager : MonoBehaviour
     {
         if(Time.time > nextSpawnTime)
         {
-            enemyID = Random.RandomRange(0, 4);
+            //generate a random numebr between 1 and 100 + does not over spawn sniper enemy
+            if(GameObject.FindGameObjectsWithTag("sniper").Length > 5)
+            {
+               Debug.Log("Max snuper reached");
+               enemyID = Random.RandomRange(1, 80);
+            }else enemyID = Random.RandomRange(1, 100);
+
+            //generate enemy depending on number generaded
+            if(enemyID <= 20)
+            {
+                enemyID = 0;
+            }else if(enemyID <= 40)
+            {
+                enemyID = 1;
+            }else if(enemyID <= 60)
+            {
+                enemyID = 2;
+            }else if(enemyID <= 80)
+            {
+                enemyID = 3;
+            }
+            else
+            {
+                enemyID = 4;    
+            }
+
+
             ySpawnLocation = Random.RandomRange(-4.2f, 4.2f);
 
             var sawnPoint = Instantiate(enmies[enemyID], (new Vector2(9.7f, ySpawnLocation)), enmies[enemyID].transform.rotation);

@@ -18,6 +18,11 @@ public class mainMenu : MonoBehaviour
         
     }
 
+    public void exitButton()
+    {
+        Application.Quit();
+    }
+
     #region selectCharacter
     public void selectCruiser()
     {

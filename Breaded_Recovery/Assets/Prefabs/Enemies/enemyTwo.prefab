@@ -13,10 +13,10 @@ GameObject:
   - component: {fileID: 7177064815877103437}
   - component: {fileID: 7177064815877103434}
   - component: {fileID: 2428713586690770612}
-  - component: {fileID: -808546029483194166}
+  - component: {fileID: 1982818799007951611}
   m_Layer: 8
   m_Name: enemyTwo
-  m_TagString: enemy
+  m_TagString: sniper
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -165,7 +165,7 @@ MonoBehaviour:
   maxHitPoints: 10
   setArmor: 1
   playerInfo: {fileID: 0}
---- !u!114 &-808546029483194166
+--- !u!114 &1982818799007951611
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -174,7 +174,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 7177064815877103435}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7ae3bfd482573f4419b2bb4ba692f9ce, type: 3}
+  m_Script: {fileID: 11500000, guid: 5c61ac4f5c0666847b02be08379843e2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   speed: -5
