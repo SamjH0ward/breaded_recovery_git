@@ -9,7 +9,7 @@ public class enemyBullet : MonoBehaviour
     private Rigidbody2D rb2d;
     private Vector2 bulletDirection = new Vector2(-1, 0);
     [SerializeField] private float bulletSpeed = 10;
-    [SerializeField] private int damage = 5;
+    [SerializeField] private int damage = 15;
 
     // Start is called before the first frame update
     void Start()
