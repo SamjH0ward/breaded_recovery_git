@@ -102,6 +102,7 @@ public class gameManager : MonoBehaviour
     private void upDateHealthUi()
     {
         health_Ui.text = "Health: " + playerHealth.HitPoints;
+        if(playerHealth.HitPoints <= 0) SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1, LoadSceneMode.Single);
     }
     
     
