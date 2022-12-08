@@ -87,7 +87,7 @@ public class gameManager : MonoBehaviour
             ySpawnLocation = Random.RandomRange(-4.2f, 4.2f);
 
             //spawns the enemy
-            var sawnPoint = Instantiate(enmies[enemyID], (new Vector2(9.7f, ySpawnLocation)), enmies[enemyID].transform.rotation);
+            Instantiate(enmies[enemyID], (new Vector2(9.7f, ySpawnLocation)), enmies[enemyID].transform.rotation);
             //sets spawn delay for next enemy
             nextSpawnTime = Time.time + (1 / enemySpawnRate);
         }
