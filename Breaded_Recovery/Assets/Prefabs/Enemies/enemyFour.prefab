@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 6892504253155666354}
   - component: {fileID: 6892504253155666353}
   - component: {fileID: 7081395500546582300}
-  - component: {fileID: 5158978105698585203}
+  - component: {fileID: -2111420201694892684}
   m_Layer: 9
   m_Name: enemyFour
   m_TagString: enemy
@@ -161,7 +161,7 @@ MonoBehaviour:
   maxHitPoints: 10
   setArmor: 1
   playerInfo: {fileID: 0}
---- !u!114 &5158978105698585203
+--- !u!114 &-2111420201694892684
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
