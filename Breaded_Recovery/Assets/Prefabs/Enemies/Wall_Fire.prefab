@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 1448241600634324775}
   - component: {fileID: 5155756152560551610}
   - component: {fileID: 6353523164409717306}
-  m_Layer: 7
+  m_Layer: 12
   m_Name: Fire3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -161,7 +161,7 @@ GameObject:
   - component: {fileID: 7097530988674554858}
   - component: {fileID: 2260009386995156735}
   - component: {fileID: 2735187361547587702}
-  m_Layer: 7
+  m_Layer: 12
   m_Name: Fire6
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -309,7 +309,7 @@ GameObject:
   - component: {fileID: 2715747887530296544}
   - component: {fileID: 2391626592236309078}
   - component: {fileID: 9095817638414576400}
-  m_Layer: 7
+  m_Layer: 12
   m_Name: Fire4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -457,7 +457,7 @@ GameObject:
   - component: {fileID: 5004545952964420477}
   - component: {fileID: 831480282783602080}
   - component: {fileID: 3847740418892742044}
-  m_Layer: 7
+  m_Layer: 12
   m_Name: Fire8
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -605,7 +605,7 @@ GameObject:
   - component: {fileID: 5257042558026158252}
   - component: {fileID: 2852146594301184269}
   - component: {fileID: 3895965893485818312}
-  m_Layer: 7
+  m_Layer: 12
   m_Name: Fire7
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -752,7 +752,7 @@ GameObject:
   - component: {fileID: 3000193368488567531}
   - component: {fileID: 6080972880431042088}
   - component: {fileID: 7529773823284784197}
-  m_Layer: 7
+  m_Layer: 12
   m_Name: Wall_Fire
   m_TagString: firey
   m_Icon: {fileID: 0}
@@ -842,7 +842,7 @@ GameObject:
   - component: {fileID: 6595425251523612844}
   - component: {fileID: 5521102468234357535}
   - component: {fileID: 3517481379739158142}
-  m_Layer: 7
+  m_Layer: 12
   m_Name: Fire1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -990,7 +990,7 @@ GameObject:
   - component: {fileID: 2257567533367890094}
   - component: {fileID: 4563266470170840947}
   - component: {fileID: 6160552846422480973}
-  m_Layer: 7
+  m_Layer: 12
   m_Name: Fire5
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1138,7 +1138,7 @@ GameObject:
   - component: {fileID: 4723964047190163957}
   - component: {fileID: 6667335995882013120}
   - component: {fileID: 6206924962041707846}
-  m_Layer: 7
+  m_Layer: 12
   m_Name: Fire2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
