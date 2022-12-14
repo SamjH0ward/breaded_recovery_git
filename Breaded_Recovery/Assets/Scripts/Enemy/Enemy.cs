@@ -1,11 +1,14 @@
 // author sam howard
 
+using System;
 using UnityEngine;
 
 [RequireComponent(typeof(HealthSystem))]
 public abstract class Enemy : MonoBehaviour
 {
     protected HealthSystem health;
+    public static event Action OnEnemyKilled;
+
 
     protected virtual void Awake()
     {
@@ -17,7 +20,7 @@ public abstract class Enemy : MonoBehaviour
 
     private void Die()
     {
-        
+        OnEnemyKilled?.Invoke();   
         Destroy(gameObject);
         
     }

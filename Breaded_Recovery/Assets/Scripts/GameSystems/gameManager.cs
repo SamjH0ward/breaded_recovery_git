@@ -13,10 +13,7 @@ public class gameManager : MonoBehaviour
     private static gameManager _instance;
     public static gameManager Instance { get { return _instance; } }
 
-    [SerializeField] protected HealthSystem healthUpdate;
-    [SerializeField] private HealthSystem playerHealth;
-
-    [SerializeField] private TextMeshProUGUI health_Ui;
+   
 
     private Transform spawnRotation;
 
@@ -35,8 +32,7 @@ public class gameManager : MonoBehaviour
     
     private void Awake()
     {
-        //updates health on wake
-        health_Ui.text = "Health: " + playerHealth.HitPoints;
+        
         //assures only one instance of gamemanger can exists
         if (_instance != null && _instance != this)
         {
@@ -107,14 +103,7 @@ public class gameManager : MonoBehaviour
     
         
     }
-    private void OnEnable() => healthUpdate.OnHealthChanged += upDateHealthUi;
-    private void OnDisable() => healthUpdate.OnHealthChanged -= upDateHealthUi;
-
-    private void upDateHealthUi()
-    {
-        health_Ui.text = "Health: " + playerHealth.HitPoints;
-        if(playerHealth.HitPoints <= 0) SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1, LoadSceneMode.Single);
-    }
+    
     
     
 }
