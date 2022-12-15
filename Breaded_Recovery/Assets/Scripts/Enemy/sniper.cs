@@ -25,28 +25,31 @@ public class sniper : Enemy
 
     private void FixedUpdate()
     {
-        float distance = transform.position.y - player.transform.position.y;
-        if (transform.position.x > 6.2) {
-            rb2d.velocity = new Vector2(speed, 0);
-        }
-        else
+        if (player != null)
         {
-            if (distance > 0)
+            float distance = transform.position.y - player.transform.position.y;
+            if (transform.position.x > 6.2)
             {
-                rb2d.velocity = new Vector2(0, speed);
-            }
-            else if(distance <0)
-            {
-                rb2d.velocity = new Vector2(0, -speed);
+                rb2d.velocity = new Vector2(speed, 0);
             }
             else
             {
-                rb2d.velocity = new Vector2(0, 0);
-            }
-          
-        }
+                if (distance > 0)
+                {
+                    rb2d.velocity = new Vector2(0, speed);
+                }
+                else if (distance < 0)
+                {
+                    rb2d.velocity = new Vector2(0, -speed);
+                }
+                else
+                {
+                    rb2d.velocity = new Vector2(0, 0);
+                }
 
-        
+            }
+
+        }
       
 
 

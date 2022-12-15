@@ -10,9 +10,15 @@ public class Suicide : Enemy
     public float speed;
     private Transform target;
     private int damage = 30;
+ 
 
 
     // Start is called before the first frame update
+   
+    void Awake()
+    {
+        base.Awake();
+    }  
     void Start()
     {
         target = GameObject.FindGameObjectWithTag("player").GetComponent<Transform>();

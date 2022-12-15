@@ -5,7 +5,7 @@ using System;
 
 public class DoubleFire : MonoBehaviour
 {
-    public event Action DoubleFireActive;
+    public static event Action DoubleFireActive;
     // Start is called before the first frame update
     void Start()
     {

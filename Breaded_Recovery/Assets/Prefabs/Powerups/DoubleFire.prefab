@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 817307801833540333}
   - component: {fileID: -4111292887931290813}
   - component: {fileID: -2573203616321819029}
-  m_Layer: 7
+  m_Layer: 8
   m_Name: DoubleFire
   m_TagString: Untagged
   m_Icon: {fileID: 0}

@@ -173,4 +173,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 573ae73101cbe8348b20fb72e86a38a1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  pickUp: {fileID: 7962264257800808341, guid: 994bb2a58991d5e4a81b91f1f4db0160, type: 3}
   speed: 7

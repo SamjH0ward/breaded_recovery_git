@@ -145,7 +145,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 57e201c5e01585449a966d8b6582a53b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &434324906 stripped
+--- !u!114 &267032065 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 4316042794310757691, guid: 8c0b5d5d748500442aa1417b846cfcb7, type: 3}
   m_PrefabInstance: {fileID: 5407059576912231711}
@@ -745,15 +745,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a249d5228e510c84a9ff2242dbd04245, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  healthUpdate: {fileID: 434324906}
-  playerHealth: {fileID: 434324906}
-  health_Ui: {fileID: 699818324}
-  enemySpawnRate: 1.4
+  enemySpawnRate: 1.3
   enmies:
+  - {fileID: 8705575994738333498, guid: 45309b448b499af4eafbff38974650a0, type: 3}
   - {fileID: 1793807763327295082, guid: ad60db99e898baa42ab779e0f20a25b0, type: 3}
-  - {fileID: 1992375129727881515, guid: 172b2f3f137bb4e46b84d484e0e99556, type: 3}
-  - {fileID: 6892504253155666352, guid: 53f628c7b891ece469f29a73acedd7e8, type: 3}
   - {fileID: 4548276063280757126, guid: 11b77652c839b834f8f2fa54711ae9ab, type: 3}
+  - {fileID: 6892504253155666352, guid: 53f628c7b891ece469f29a73acedd7e8, type: 3}
   - {fileID: 7177064815877103435, guid: ac9e3dcfbddd28049b211123bcb959e7, type: 3}
   - {fileID: 6595425249954457633, guid: ace1a2bb8d07c1c4aa10e7e882f1b4e6, type: 3}
 --- !u!4 &909911499
@@ -860,8 +857,9 @@ GameObject:
   - component: {fileID: 2087543110}
   - component: {fileID: 2087543109}
   - component: {fileID: 2087543108}
+  - component: {fileID: 2087543112}
   m_Layer: 5
-  m_Name: Canvas
+  m_Name: playerUI
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -951,6 +949,22 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
+--- !u!114 &2087543112
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2087543107}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 97cb7754a2c349140b9103b86f364957, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  healthUpdate: {fileID: 267032065}
+  playerHealth: {fileID: 267032065}
+  health_Ui: {fileID: 699818324}
+  score_Ui: {fileID: 628498190}
 --- !u!1001 &5407059576912231711
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -958,6 +972,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: -8293134446944931760, guid: 8c0b5d5d748500442aa1417b846cfcb7, type: 3}
+      propertyPath: Double
+      value: 
+      objectReference: {fileID: -4111292887931290813, guid: 994bb2a58991d5e4a81b91f1f4db0160, type: 3}
     - target: {fileID: 4316042794310757691, guid: 8c0b5d5d748500442aa1417b846cfcb7, type: 3}
       propertyPath: playerInfo
       value: 

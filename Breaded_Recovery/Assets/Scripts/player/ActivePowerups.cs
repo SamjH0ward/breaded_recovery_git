@@ -5,7 +5,7 @@ using UnityEngine;
 public class ActivePowerups : MonoBehaviour
 {
     public bool DoubleFireActive;
-    [SerializeField] private DoubleFire Double;
+   
     // Start is called before the first frame update
     void Start()
     {
@@ -17,9 +17,9 @@ public class ActivePowerups : MonoBehaviour
     {
 
     }
-    private void OnEnable() => Double.DoubleFireActive += Activate;
+    private void OnEnable() => DoubleFire.DoubleFireActive += Activate;
 
-    private void OnDisable() => Double.DoubleFireActive -= Activate;
+    private void OnDisable() => DoubleFire.DoubleFireActive -= Activate;
     private void Activate()
     {
         DoubleFireActive = true;

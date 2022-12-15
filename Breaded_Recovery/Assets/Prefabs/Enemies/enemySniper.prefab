@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 7177064815877103434}
   - component: {fileID: 2428713586690770612}
   - component: {fileID: 1982818799007951611}
-  m_Layer: 8
+  m_Layer: 9
   m_Name: enemySniper
   m_TagString: sniper
   m_Icon: {fileID: 0}
@@ -177,6 +177,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5c61ac4f5c0666847b02be08379843e2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  pickUp: {fileID: 7962264257800808341, guid: 994bb2a58991d5e4a81b91f1f4db0160, type: 3}
   speed: -5
   bullet: {fileID: 4211186664103317416, guid: b98e5a9c2adb64d49aa19d0f6cab00de, type: 3}
   rateOfFire: 1

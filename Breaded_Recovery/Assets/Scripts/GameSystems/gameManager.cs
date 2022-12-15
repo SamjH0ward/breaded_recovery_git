@@ -67,21 +67,20 @@ public class gameManager : MonoBehaviour
             //generate a random numebr between 1 and 100 + does not over spawn sniper enemy
             if(GameObject.FindGameObjectsWithTag("sniper").Length >= 5)
             {
-               Debug.Log("Max snuper reached");
-               enemyID = Random.RandomRange(1, 80);
+               enemyID = Random.RandomRange(1, 85);
             }else enemyID = Random.RandomRange(1, 100);
 
             //generate enemy depending on number generaded
-            if(enemyID <= 20)
+            if(enemyID <= 40)
             {
                 enemyID = 0;
-            }else if(enemyID <= 40)
-            {
-                enemyID = 1;
             }else if(enemyID <= 60)
             {
+                enemyID = 1;
+            }else if(enemyID <= 70)
+            {
                 enemyID = 2;
-            }else if(enemyID <= 80)
+            }else if(enemyID <= 85)
             {
                 enemyID = 3;
             }

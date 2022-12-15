@@ -13,7 +13,8 @@ GameObject:
   - component: {fileID: -1159914671739327134}
   - component: {fileID: -5064619552727495072}
   - component: {fileID: -3866463002578466233}
-  m_Layer: 0
+  - component: {fileID: -6670243978883514101}
+  m_Layer: 7
   m_Name: meteor_med
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -99,7 +100,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e1c6988e55f744444bc58fe84f8bdcf1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxHitPoints: 0
+  maxHitPoints: 30
   setArmor: 1
   playerInfo: {fileID: 0}
 --- !u!114 &-5064619552727495072
@@ -114,7 +115,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 08f00ba94e43078429db84a5b5f44d2f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 5
+  pickUp: {fileID: 7962264257800808341, guid: 994bb2a58991d5e4a81b91f1f4db0160, type: 3}
+  speed: -5
   rotationspeed: 4
 --- !u!60 &-3866463002578466233
 PolygonCollider2D:
@@ -150,3 +152,24 @@ PolygonCollider2D:
       - {x: 0.21499999, y: -0.125}
       - {x: 0.21499999, y: 0.13499999}
       - {x: 0.205, y: 0.21499999}
+--- !u!50 &-6670243978883514101
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8705575994738333498}
+  m_BodyType: 0
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 0
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 1
+  m_Constraints: 0
