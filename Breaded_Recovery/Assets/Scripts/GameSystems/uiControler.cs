@@ -24,9 +24,9 @@ public class uiControler : MonoBehaviour
     }
 
     // Update is called once per frame
-    void Update()
+    void Start()
     {
-        
+        health_Ui.text = "Health: " + playerHealth.HitPoints;
     }
 
     private void OnEnable()
